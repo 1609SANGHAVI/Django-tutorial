@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Login Details</title>
+</head>
+<body>
+    <p>Dear {{ user.username}},</p>
+
+    <p>Your account has been created with the following credentials for Govindu App:</p>
+    <p>Please login your account with login credentials:</p>
+
+    <ul>
+        <li><strong>Mobile:</strong> {{ mobile }}</li>
+        <li><strong>Password:</strong> {{ password }}</li>
+        <li><strong>Login URL:</strong> <a href="{{ login_url }}">{{ login_url }}</a></li>
+    </ul>
+
+    <p>Please change your password after your first login.</p>
+
+    <p>Regards,<br>Govindu</p>
+</body>
+</html>
